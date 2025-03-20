@@ -20,7 +20,7 @@
       </thead>
       <tbody id="output">
         <!-- Loading Row -->
-        <tr id="loading-row">
+        <tr id="loading">
           <td colspan="2">Loading...</td>
         </tr>
       </tbody>
@@ -45,7 +45,7 @@
       // Wait for all promises to resolve
       Promise.all([promise1, promise2, promise3]).then((results) => {
         const tableBody = document.getElementById("output");
-        const loadingRow = document.getElementById("loading-row");
+        const loadingRow = document.getElementById("loading");
 
         // Remove the loading row
         loadingRow.remove();
